@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Prata&display=swap');
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+#root, #__next {
+  isolation: isolate;
+}
+/*--------------------------------*/
+
+:root {
+    /*primary colors*/
+    --black: #0a0a0b;
+    --lightGrey: #adadad;
+    --white: #ffffff;
+    --grey: #2e3038;
+}
+
+.nav-brand a,
+nav button,
+.jumbotron h1,
+.projects h1,
+.about h1,
+.contact h1,
+.btn {
+    font-family: Prata, sans-serif;
+    font-weight: 400;
+}
+
+.nav-brand a,
+.jumbotron h1,
+.projects .nav-link,
+.about h1,
+.contact h1 {
+    color: var(--white);
+}
+
+.jumbotron h1, 
+.projects h1,
+.about h1,
+.contact h1 {
+    font-size: 2.25rem;    
+}
+html,body {
+  scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--black);
+    color: var(--lightGrey);
+    font-family: Inter, Lato, "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+/* Navigation bar */
+header {
+  padding-top: 3.5rem;
+}
+
+.nav-brand h1 {    
+    font-size: 1.15rem;
+}
+
+.nav-menu a {    
+    color: var(--lightGrey);
+}
+
+.nav-menu a:hover {
+  color: var(--white);
+  font-weight: bolder;
+  transition: all .2s ease-in;
+}
+
+.nav-menu {
+  list-style-type: none;
+  padding: 1rem;
+}
+
+.nav-menu li, .nav-btn {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.navbar-items {
+  padding-bottom: 5px;
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.navbar {
+  padding-bottom: 10px;
+}
+
+.navbar img:hover {
+  cursor: pointer;
+}
+
+.navbar-toggle {
+   position: absolute;
+    top: 40px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/*-----------*/
+
+/* landing */
+.landing {
+  padding-bottom: 2rem;
+}
+/*-----------*/
+
+/* jumbotron */
+.jumbotron {
+  margin-bottom: 5rem;
+}
+
+
+
+/* logo bar */
+.logo-bar {
+  margin-bottom: 5rem;
+  flex-flow:row wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 30px;
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+/*-----------------*/
+
+/* projects */
+.projects {
+  flex-flow:column wrap;
+}
+.projects img {
+  width: 100%;
+  height: 250px;
+}
+
+.projects h1 {
+  padding-top: 2rem;  
+}
+
+.projects article {
+  margin-bottom: 4rem;
+}
+
+.projects .nav-link:hover {
+  color: var(--lightGrey);
+}
+/*--------------*/
+
+/* about */
+.about {  
+  background-color: var(--grey);
+  padding-bottom: 2rem;
+  
+}
+.about .flex {
+  flex-flow: column;
+}
+.about h1 {
+  margin-bottom: 1rem;
+}
+
+.first-p {
+  margin-bottom: 2rem;
+}
+
+.second-p {
+  margin-bottom: 5rem;
+}
+/*-----------------*/
+
+/* contact */
+.contact p {
+  margin-bottom: 1rem;
+}
+
+.contact {
+  padding-bottom: 5rem;
+}
+/*-----------------*/
+
+/* footer */
+footer {
+  background-color: var(--grey);
+  padding: 1.5rem;
+}
+
+.social-media{   
+  gap: 15px !important;
+}
+
+/*-------------*/
+
+
+
+/*----------------*/
+.attribution {
+  margin-top: 50px;
+  align-content: center;
+  font-size: 0.7rem;
+  text-align: center;
+  justify-content: center;
+}
+.attribution a {
+  color: var(--white);
+}
+/* utilities */
+.container {
+    
+    margin:auto;
+    padding: 0 20px;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.btn {
+    width: 170px;
+    height: 55px;
+    border-radius: 0;
+    border: none;
+    background-color: #fbe850;
+    font-size: 1.2rem;    
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color:var(--grey) ;
+  color: var(--white);
+}
+
+.nav-link, .nav-brand {
+  text-decoration: none;
+}
+
+/* margins */
+.mbrem2 {
+  margin-bottom: 2rem;
+}
+
+.ptrem5 {
+  padding-top: 5rem;
+}
+
+/* media queries */
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  body {
+    font-size: 1.15rem;
+  }
+
+  .jumbotron h1 {
+    font-size: 3.5rem;
+  }
+  .logo-bar {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+  .container {
+    padding: 0 40px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  body {
+    width: 1440px;
+  }
+  .navbar-toggle {
+    display: none;
+  }
+
+  .nav-menu, .nav-btn {
+    display: block;
+  }
+
+  .navbar {  
+  display: flex;
+  justify-content: space-between;
+
+}
+.navbar-items {
+  display: flex;
+  position: relative;
+  bottom: 30px;
+      
+}
+
+.navbar-items ul {
+        display: flex;
+        gap: 1em;
+        text-align: center;
+        margin-right: 15em;
+    }
+
+.navbar-items .navbar-link {
+  padding-right: 8px;
+} 
+
+
+  .jumbotron {
+    width: 70%;
+  }
+
+  .jumbotron p {
+    padding-right: 30px;
+  }
+
+  .logo-bar {
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  .projects {
+    flex-flow: row;
+    gap:5rem;
+  }
+  .projects img {
+    height: 18.75rem;
+  }
+  .about .flex {
+    width: 100%;
+    align-items: normal;    
+    flex-flow: row nowrap;
+    column-gap: 85px;
+  }
+  
+  .contact p {
+    width: 50%;
+  }
+  .container {
+    padding: 0 150px;
+  }
+ }
