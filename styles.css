@@ -62,6 +62,7 @@ nav button,
 .contact h1 {
     font-size: 2.25rem;    
 }
+
 html,body {
   scroll-behavior: smooth;
 }
@@ -315,27 +316,25 @@ footer {
   display: flex;
   justify-content: space-between;
 
-}
-.navbar-items {
+  }
+  .navbar-items {
   display: flex;
   position: relative;
-  bottom: 30px;
-      
-}
+  bottom: 30px;      
+  }
 
-.navbar-items ul {
+  .navbar-items ul {
         display: flex;
         gap: 1em;
         text-align: center;
         margin-right: 15em;
     }
 
-.navbar-items .navbar-link {
+  .navbar-items .navbar-link {
   padding-right: 8px;
-} 
+  } 
 
-
-  .jumbotron {
+    .jumbotron {
     width: 70%;
   }
 
