@@ -14,7 +14,7 @@ Developed using: <br>
 
 ### Challenge from Codewell
 
-Visit the relevant challenge on [Codewell](https://codewell.cc) and click on 'Submit Solution' right under the challenge.
+Visit the relevant challenge on [Codewell](https://www.codewell.cc/challenges/web-developer-portfolio--617d4897a383e41090a3e46f) and click on 'Submit Solution' right under the challenge.
 Enter all the title, Github repo URL, Live URL (Netlify or GH Pages), and tell the community what challenges you've faced.
 
 ### Join our community on Slack
